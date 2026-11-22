@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Megyapa Africa Market</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      margin: 0;
+      color: #1d1d1d;
+      line-height: 1.6;
+      background: #fff;
+    }
+
+    /* ---------- HEADER / NAV ---------- */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: gold;
+      border-bottom: 3px solid #1b5e20;
+    }
+    nav {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 12px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+    }
+    nav .brand {
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin-right: auto;
+      color: #1b5e20;
+    }
+    nav a {
+      color: #111;
+      text-decoration: none;
+      padding: 10px 18px;
+      border-radius: 6px;
+      font-size: 1.1rem;
+    }
+    nav a:hover,
+    nav a:focus-visible { background: #1b5e20; color: #fff; outline: none; }
+
+    /* ---------- LAYOUT ---------- */
+    main { max-width: 1100px; margin: 0 auto; padding: 0 20px 60px; }
+    section { padding-top: 48px; scroll-margin-top: 70px; }
+    h1 { font-size: 2.6rem; margin: 40px 0 10px; }
+    h2 { font-size: 1.9rem; margin: 0 0 8px; color: #1b5e20; }
+    .lead { max-width: 65ch; }
+
+    /* ---------- PRODUCTS (images) ---------- */
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+      gap: 22px;
+      margin-top: 20px;
+    }
+    .product {
+      border: 1px solid #d9d9d9;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #fff;
+    }
+    .product img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      display: block;
+      background: #f1e7b8;   /* shows while photo loads or if missing */
+    }
+    .product .info { padding: 12px 14px 16px; }
+    .product h3 { margin: 0 0 4px; font-size: 1.15rem; }
+    .product p { margin: 0; font-size: 0.95rem; }
+    .price { font-weight: bold; color: #1b5e20; margin-top: 8px !important; }
+
+    /* ---------- SERVICES ---------- */
+    .open-banner {
+      background: #1b5e20;
+      color: #fff;
+      padding: 16px 22px;
+      border-radius: 8px;
+      font-size: 1.3rem;
+      margin: 14px 0 20px;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 18px;
+    }
+    .service {
+      border-left: 6px solid gold;
+      background: #faf7e6;
+      padding: 14px 18px;
+      border-radius: 0 8px 8px 0;
+    }
+    .service h3 { margin: 0 0 4px; }
+    .service p { margin: 0; }
+
+    /* ---------- OTHER ---------- */
+    hr { border: 0; border-top: 1px solid #999; margin: 28px 0; }
+    blockquote { margin: 0; max-width: 75ch; }
+    form label { display: block; margin-bottom: 14px; }
+    form input {
+      padding: 6px 8px;
+      font-size: 1rem;
+      margin-left: 6px;
+    }
+    button { padding: 8px 16px; font-size: 1rem; cursor: pointer; }
+    footer {
+      background: #1b5e20;
+      color: #fff;
+      text-align: center;
+      padding: 18px;
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 2rem; }
+      nav a { padding: 8px 12px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <span class="brand">Megyapa Africa Market</span>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#products">Products</a>
+      <a href="#services">Services</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HOME -->
+    <section id="home">
+      <h1>Megyapa Africa Market</h1>
+      <p class="lead">We sell all kinds of African products and also deliver wherever you are in the UAE.</p>
+      <p class="lead">Click the link to learn more about our products and services.</p>
+      <p class="lead">Recommended for <strong>children and pregnant women</strong></p>
+      <p class="lead">We are located in <strong> UAE</strong></p>
+      <hr>
+      <p><a href="#products"><strong>click here</strong></a></p>
+      <hr>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h2>About</h2>
+      <blockquote>
+**Missing the True Taste of Home?**
+Welcome to Megyapa Africa Market! Whether you want fresh raw ingredients to cook your favorite dishes or hot, ready-to-eat African meals, we’ve got you covered. Authentic spices, garri, palm oil, jollof, and more—delivered straight to your doorstep anywhere in the UAE, 24/7!
+**Craving Real African Flavor in the UAE?**
+From raw pantry staples (garri, red palm oil, authentic spices) to hot, freshly cooked meals (jollof rice, egusi soup), Adineba Africa Shop brings home to you. Fast 24/7 delivery across the UAE. Order anytime!
+**Your Home Away From Home**
+Megyapa Africa Shop stocks everything you need, from uncooked African groceries and spices to freshly prepared traditional meals. Open 24/7 with fast delivery across all Emirates.
+      </blockquote>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section id="products">
+      <h2>Our African Food Products</h2>
+      <p class="lead">Fresh and authentic. Browse what we have in stock.</p>
+
+      <div class="products">
+
+        <article class="product">
+          <img src="images/jollof.jpg" alt="Jollof rice" loading="lazy">
+          <div class="info">
+            <h3>Jollof Rice</h3>
+            <p>Party-style jollof, ready to eat.</p>
+            <p class="price">AED 25</p>
+          </div>
+        </article>
+
+        <article class="product">
+          <img src="images/egusi.jpg" alt="Egusi soup" loading="lazy">
+          <div class="info">
+            <h3>Egusi Soup</h3>
+            <p>Melon seed soup with rich spices.</p>
+            <p class="price">AED 30</p>
+          </div>
+        </article>
+
+        <article class="product">
+          <img src="images/gari.jpg" alt="Garri" loading="lazy">
+          <div class="info">
+            <h3>Garri</h3>
+            <p>Fine white or yellow cassava flakes.</p>
+            <p class="price">AED 15</p>
+          </div>
+        </article>
+
+        <article class="product">
+          <img src="images/plantain chips.jpg" alt="Plantain chips" loading="lazy">
+          <div class="info">
+            <h3>Plantain Chips</h3>
+            <p>Crunchy, lightly salted snack.</p>
+            <p class="price">AED 10</p>
+          </div>
+        </article>
+
+        <article class="product">
+          <img src="images/megyapa_palm_oil.jpg" alt="Red palm oil" loading="lazy">
+          <div class="info">
+            <h3>Red Palm Oil</h3>
+            <p>Pure palm oil for cooking.</p>
+            <p class="price">AED 20</p>
+          </div>
+        </article>
+
+        <article class="product">
+          <img src="images/africa spices.jpg" alt="African spices" loading="lazy">
+          <div class="info">
+            <h3>African Spices</h3>
+            <p>Seasoning mixes and dried peppers.</p>
+            <p class="price">AED 12</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services">
+      <h2>Our Services</h2>
+      <div class="open-banner">Open 24/7: all day, every day, including weekends and holidays.</div>
+
+      <div class="services">
+        <div class="service">
+          <h3>24/7 Delivery</h3>
+          <p>We deliver anywhere in the UAE, day or night.</p>
+        </div>
+        <div class="service">
+          <h3>Catering</h3>
+          <p>African food for weddings, parties and events.</p>
+        </div>
+        <div class="service">
+          <h3>Orders Anytime</h3>
+          <p>Place your order at any hour using the form below.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT FORM -->
+    <section id="contact">
+      <h2>Place an Order</h2>
+      <form>
+        <label>Name: <input type="text" name="name" required></label>
+        <label>Email: <input type="email" name="email" required></label>
+        <label>Phone Number: <input type="tel" name="phone" required></label>
+        <label>Password: <input type="password" name="password" required></label>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    &copy; 2026 Megyapa Africa Market, Dubai, UAE. Open 24/7.
+  </footer>
+
+</body>
+</html>
