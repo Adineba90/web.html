@@ -3,23 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Web Dev</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Adineba Web</title>
+    <style>
+    #introduction {
+    padding: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    background-color: transparent;
+    }
+    .nav1{
+      border: 1px solid green;
+      width: fit-content;
+      padding: 5px 10px;
+      margin: 0;
+      text-align: center;
+      background-color: gold;
+    }
+    .nav1 ul {
+      margin: 0;
+      padding-left: 20px;
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+    .nav1 li{
+      line-height: 1.6;
+    }
+    .nav1 button{
+      border: 0;
+      border-radius: 4px;
+      background: transparent;
+      color: inherit;
+      cursor: pointer;
+      font: inherit;
+      padding: 6px 10px;
+      transition: background-color 0.2s, color 0.2s;
+    }
+    .nav1 button:hover,
+    .nav1 button[aria-pressed="true"]{
+      background-color: #1f6b1f;
+      color: white;
+    }
+    .nav1 button:focus-visible{
+      outline: 2px solid #1f6b1f;
+      outline-offset: 2px;
+    }
+    .nav1 button:active{
+      transform: scale(0.96);
+    }
+    body{
+      margin: 0;
+      padding: 2rem;
+    }
+    </style> 
+
+</head>
+
+
 <body>
-  <nav>
+  <header id="introduction">
+    <nav class="nav1">
     <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><button type="button" aria-pressed="false">home</button></li>
+      <li><button type="button" aria-pressed="false">about</button></li>
+      <li><button type="button" aria-pressed="false">Products</button></li>
+      <li><button type="button" aria-pressed="false">services</button></li>
     </ul>
-  </nav>
-  <h1>welcome to my web dev</h1>
-  <p>This is my hands on web development page</p>
-  <h2>This Is My Subheading</h2>
-  
-</body>
-<h3>This Is My Third Heading For My webdevelopment Page</h3>
-<body> 
-<footer>&copy; 2026 My Web Dev. All rights reserved.</footer>
+    </nav>  
+  </header>
+<h1>Adineba Africa Shop In UAE</h1>
+<p>We sell all kind of africian products and also deliver wherever in the UAE</p>
+<p>click the link to learn more about our products and services</p>
+<p>Not recommended for <strong>children and pregnant women</strong></p>
+   <p>We are located in <b>Dubai, UAE</b></p>
+   <hr>
+<a href="https://www.capitalcatering.ae/"><b>click here</b></a>
+<hr>
+<blockquote cite="https://www.capitalcatering.ae/">
+  <hr>
+  <p>Capital Catering is a leading catering company in Dubai, UAE, providing high-quality catering services for various events and occasions. With a team of experienced chefs and staff, they offer a wide range of menu options to suit different tastes and preferences. Their commitment to excellence and customer satisfaction has made them a trusted choice for catering services in the region.</p>
+</blockquote>
+<form action="">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required><br><br>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required><br><br>
+  <label for="phone number">Phone Number:</label>
+  <input type="tel" id="phone number" name="phone number" required><br><br>
+  <label for="password">password:</label>
+  <input type="password" id="password" name="password" required><br><br>
+  <input type="submit" value="Submit"><br><br>
+</form>
+<footer>&copy; 2023 Adineba Africa Shop In UAE. All rights reserved.</footer>
+<script>
+  document.querySelectorAll(".nav1 button").forEach(button => {
+    button.addEventListener("click", () => {
+      document.querySelectorAll(".nav1 button").forEach(item => {
+        item.setAttribute("aria-pressed", item === button ? "true" : "false");
+      });
+    });
+  });
+</script>
 </body>
 </html>
